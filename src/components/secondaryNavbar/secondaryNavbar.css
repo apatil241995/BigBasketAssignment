@@ -1,0 +1,68 @@
+.secnavbarcontainer {
+  width: 100%;
+  background-color: #84c225;
+  height: 80px;
+  display: none;
+}
+
+.sectopdiv {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.secbottomdiv {
+  width: 100%;
+  height: 40px;
+}
+
+.secsearchbar {
+  height: 30px;
+  width: 97%;
+  margin: auto auto;
+  border: 1px solid #888;
+  padding: 0 12px;
+  color: #222;
+  font-size: 13px;
+}
+
+.cartcount {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: red;
+  right: 6.5%;
+  top: 0.5%;
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .secnavbarcontainer {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .cartcount {
+    right: 5.5%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .cartcount {
+    right: 3.5%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .cartcount {
+    right: 2.5%;
+  }
+
+}

@@ -1,0 +1,19 @@
+.secondaryswiper {
+  display: none;
+
+}
+
+@media screen and (max-width: 700px) {
+  .secondaryswiper {
+    display: flex;
+    margin: auto;
+    margin-left: 3%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .secondaryswiper {
+    display: none;
+  }
+}

@@ -1,0 +1,193 @@
+.navcontainer {
+  margin: 0 auto;
+  width: 75%;
+  height: 124px;
+}
+
+.topnavdiv {
+  display: flex;
+  height: 26px;
+  background: white;
+  width: fit-content;
+  width: 390px;
+  float: right;
+}
+
+.phoneicon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-top: 0.3%;
+}
+
+.phonenumber {
+  position: relative;
+  color: #666;
+  font-size: 12px;
+  margin-top: 0.3%;
+  margin-left: 1%;
+}
+
+.locationicon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-top: 0.3%;
+  margin-left: 2%;
+}
+
+.address {
+  position: relative;
+  color: #666;
+  font-size: 12px;
+  margin-top: 0.3%;
+  margin-left: 1%;
+}
+
+.profileicon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-top: 0.3%;
+  margin-left: 2%;
+}
+
+.login {
+  position: relative;
+  color: #666;
+  font-size: 12px;
+  margin-top: 0.3%;
+  margin-left: 1%;
+}
+
+.bigbasketimg {
+  position: absolute;
+  top: -15px;
+  width: 180px;
+  height: 70px;
+  z-index: 1;
+}
+
+img {
+  display: block;
+}
+
+
+.searchbar {
+  width: -moz-fit-content;
+  display: flex;
+  position: relative;
+  /* margin-left: 20.5%; */
+  width: 100%;
+}
+
+.searchinput {
+  width: 532px;
+  margin-top: 1%;
+  border: 1px solid #888;
+  border-radius: 0;
+  box-shadow: none;
+  height: 28px;
+  padding: 0 12px;
+  color: #222;
+}
+
+.searchbutton {
+  position: relative;
+  margin-top: 1%;
+  border: 1px solid #84c225;
+  background-color: #84c225;
+  color: #fff;
+  height: 30px;
+  width: 35px;
+}
+
+.cartdiv {
+  border: 1px solid #dedede;
+  width: fit-content;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  padding: 0 12px;
+  background: #dedede;
+}
+
+
+.bottomnavdiv {
+  position: absolute;
+  height: 36px;
+  margin: 0 auto;
+  background: white;
+  margin-top: 58px;
+  width: 75%;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+
+.filterdropdown {
+  position: absolute;
+  left: 0;
+  width: 227px;
+  background: #84c225;
+  height: inherit;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  /* font: 15px ProximaNovaA-Bold!important; */
+  padding: 8px 6px;
+  line-height: 20px !important;
+}
+
+.offerdiv {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  left: 234px;
+}
+
+.offertext {
+  margin: auto auto;
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 7px;
+}
+
+@media screen and (max-width: 1000px) {
+  .css-q047fz {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .navcontainer {
+    width: 90%;
+  }
+
+  .bottomnavdiv {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navcontainer {
+    width: 95%;
+  }
+
+  .bottomnavdiv {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navcontainer {
+    width: 98%;
+  }
+
+  .bottomnavdiv {
+    width: 98%;
+  }
+}

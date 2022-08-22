@@ -1,0 +1,42 @@
+.cardgrid {
+  position: relative;
+  width: 72%;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 13%;
+  margin-right: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 1350px) {
+
+  .cardgrid {
+    width: 87.5%;
+    margin-left: 5.5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .cardgrid {
+    width: 84.5%;
+    margin-left: 10.5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .cardgrid {
+    width: 97%;
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+  .cardgrid {
+    width: 45%;
+    margin-left: 27%;
+  }
+}

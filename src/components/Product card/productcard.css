@@ -1,0 +1,282 @@
+.productCard {
+  height: 394px;
+  top: 2%;
+  width: 220px;
+  border: solid rgba(128, 128, 128, 0.123);
+  border-width: 0.1px;
+}
+
+.offerbox {
+  display: flex;
+  color: red;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px rgba(160, 157, 157, 0.4);
+  width: 95%;
+  align-content: center;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  height: 22px;
+}
+
+.offertext_1 {
+  font-size: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 55%;
+}
+
+.productimage {
+  margin-top: 2%;
+  opacity: 0.9;
+  margin-left: 16%;
+}
+
+.vegmark {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: -8%;
+  margin-left: 4%;
+}
+
+.companyname {
+  text-align: left;
+  font-size: 11px;
+  margin-left: 5%;
+  margin-bottom: 1px;
+  color: rgba(51, 51, 51, 0.212);
+}
+
+.productname {
+  text-align: left;
+  font-size: 13px;
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 0;
+  min-height: 13%;
+}
+
+.weightdropdown {
+  width: 90%;
+  height: 22px;
+  margin-left: 1%;
+  border-radius: 0px;
+  color: rgba(71, 71, 71, 0.9);
+  background-color: white;
+}
+
+.pricequantitydiv {
+  width: 90%;
+  height: fit-content;
+  margin-left: 5.3%;
+  background-color: #f2f2f2;
+  padding-bottom: 3%;
+}
+
+.quantitydiv_2 {
+  display: none;
+  width: 63%;
+  height: 20px;
+  background-color: #fce681;
+  margin-left: 2%
+}
+
+.pricediv {
+  display: flex;
+  height: 20%;
+}
+
+.mrp {
+  color: #666;
+  font-size: 11px;
+  margin-left: 2%;
+  float: left;
+  line-height: 1;
+  text-align: left;
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.price {
+  font-size: 18px;
+  width: fit-content;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+
+.deliverydiv {
+  width: 90%;
+}
+
+.truckicon {
+  width: 30px;
+  height: 25px;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.delivery {
+  font-size: 10px;
+  color: #333;
+  margin-bottom: 2px;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.quantitydiv {
+  display: flex;
+}
+
+.qty {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-left: 2%;
+  display: flex;
+  width: 35%;
+  height: 2%;
+}
+
+.quantity {
+  border-right: 1px solid black;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #999;
+  border-color: #e0e0e0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.priceinput {
+  border: none;
+  width: 52%;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.addbutton {
+  height: 2%;
+  background: linear-gradient(180deg, #fee67c 0, #f2cb76);
+  border: 1px solid #fee67c;
+  border-radius: 4px;
+  margin-left: 1%;
+  color: #414042;
+  font-size: 13px;
+}
+
+.addquantitybutton {
+  float: right;
+  background: linear-gradient(180deg, #fff 0, #eaeaea 99%);
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.subquantitybutton {
+  width: 20px;
+  float: left;
+  background: linear-gradient(180deg, #fff 0, #eaeaea 99%);
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.basketquantity {
+  width: 20px;
+  width: 65%;
+  background: #fce681;
+  padding: 2px;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+  margin-top: auto;
+  height: 14px;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 1350px) {
+  .productCard {
+    width: 216px;
+    height: 387px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .productCard {
+    width: 176px;
+    height: 410px;
+  }
+
+  .offertext_1 {
+    margin-left: 53%;
+  }
+
+  .productimage {
+    width: 124px;
+    height: 150px;
+    margin-left: 17%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .productCard {
+    width: 190px;
+    height: 410px;
+  }
+
+  .offertext_1 {
+    margin-left: 53%;
+  }
+
+  .productimage {
+    width: 124px;
+    height: 150px;
+    margin-left: 17%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .productCard {
+    width: 290px;
+    height: 410px;
+  }
+
+  .offertext_1 {
+    margin-left: 70%;
+  }
+
+  .productimage {
+    width: 180px;
+    height: 150px;
+    margin-left: 17%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .productCard {
+    width: 99%;
+    height: fit-content;
+  }
+
+  .offertext_1 {
+    margin-left: 70%;
+  }
+
+  .productimage {
+    width: 70%;
+    height: 45%;
+    margin-left: 17%;
+  }
+
+  .pricequantitydiv {
+    margin-bottom: 10px;
+  }
+
+  .addquantitybutton {
+    margin-left: 17%;
+  }
+}

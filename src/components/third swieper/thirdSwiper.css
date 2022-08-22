@@ -1,0 +1,46 @@
+.thirdswiper {
+  display: none;
+
+}
+
+.thirdimg {
+  width: 190;
+  height: 60;
+}
+
+@media screen and (max-width: 600px) {
+  .thirdswiper {
+    display: flex;
+    margin: auto;
+    margin-left: 16%;
+    margin-top: 10px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .thirdswiper {
+    display: flex;
+    margin: auto;
+    margin-left: 16%;
+    margin-top: 10px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .thirdswiper {
+    display: flex;
+    margin: auto;
+    margin-left: 6%;
+    margin-top: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .thirdimg {
+    width: 170;
+    height: 40;
+  }
+}

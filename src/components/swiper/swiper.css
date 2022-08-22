@@ -1,0 +1,33 @@
+.pagination {
+  font-size: 10px;
+
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: fit-content;
+  height: 25px;
+  border-radius: 0;
+  color: #000;
+  background: white;
+  padding: 0 5px;
+  border-bottom: 5px solid green;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    display: none;
+  }
+}

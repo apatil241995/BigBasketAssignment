@@ -1,0 +1,26 @@
+.bankofferimg {
+  max-width: 280px;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .bankofferimg {
+    max-width: 223px;
+    min-height: 168px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .bankofferimg {
+    max-width: 298px;
+    min-height: 224px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .bankofferimg {
+    max-width: 98%;
+    min-height: 98%;
+  }
+}
