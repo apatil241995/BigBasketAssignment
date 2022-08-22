@@ -7,12 +7,12 @@ import './productgrid.css'
 
 export default function ProductGrid() {
   const productCategory = useSelector(state => state.filter.productCategory)
-
+  const productName = useSelector(state => state.search.productName)
   const a = ProductData.filter((product, index) => {
-    if (productCategory === 'all') {
+    if (productCategory === 'all' && productName === '') {
       return product
     }
-    return product.category === productCategory
+    return product.category === productCategory || productName === product.name
   })
 
   return (

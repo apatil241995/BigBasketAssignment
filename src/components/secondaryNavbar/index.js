@@ -4,12 +4,24 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import { useSelector } from "react-redux";
+import SearchIcon from '@mui/icons-material/Search';
+import LeftDrawer from "../drawer";
+import SearchProduct from '../../modules/actions/searchProduct'
+import { useSelector, useDispatch } from "react-redux";
+import { useState } from "react";
 
 export default function SecondaryNavbar() {
+  const [name, setName] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
   const itemCount = useSelector(state => state.cart.cartProduct)
+  const dispatch = useDispatch()
+  const Search = (e) => {
+    e.preventDefault()
+    dispatch(SearchProduct(name))
+  }
   return (
     <div className="secnavbarcontainer">
+      <LeftDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="sectopdiv">
         <DensityMediumIcon sx={{
           fill: 'white',
@@ -17,7 +29,7 @@ export default function SecondaryNavbar() {
           height: '30px',
           position: 'relative',
           margin: '5px auto'
-        }} />
+        }} onClick={() => { setIsOpen(true) }} />
         <PersonOutlineOutlinedIcon sx={{
           fill: 'white',
           fontSize: '30px',
@@ -25,7 +37,7 @@ export default function SecondaryNavbar() {
           position: 'relative',
           margin: '5px auto'
         }} />
-        <img src="https://www.bbassets.com/static/v2570/custPage/build/content/img/bb-icon.png" alt=""
+        <img src={process.env.REACT_APP_BB_LOGO} alt=""
           style={{
             fill: 'white',
             width: '30px',
@@ -55,9 +67,18 @@ export default function SecondaryNavbar() {
           }}>{itemCount}</p>
         </div>
       </div>
-      <div className="secbottomdiv ">
-        <input type='text' className="secsearchbar" defaultValue={'Search For Product..'} />
-      </div>
+
+      <form className="secbottomdiv " onSubmit={Search}>
+        <input
+          type='text'
+          className="secsearchbar"
+          value={name}
+          placeholder={'Search For Product..'}
+          onChange={(e) => { setName(e.target.value) }}
+        />
+        <button className="searchbutton_1" type="submit"><SearchIcon sx={{ fill: 'black' }} /></button>
+      </form>
+
     </div>
   )
 }

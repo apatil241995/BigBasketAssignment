@@ -7,6 +7,7 @@ import BankOffers from "../../components/bankoffers";
 import SecondaryNavbar from "../../components/secondaryNavbar";
 import SecondarySwiper from "../../components/secondary swiper";
 import ThirdSwiper from "../../components/third swieper";
+// import Footer from "../../components/footer";
 
 
 export default function Home() {
@@ -22,7 +23,6 @@ export default function Home() {
       <p style={{ fontSize: '24px', color: '#444444' }}>Bank Offers</p>
       <BankOffers />
       <ProductGrid />
-
     </div>
 
   )

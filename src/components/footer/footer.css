@@ -1,5 +1,26 @@
-.footer {
-  padding: 10px 15px 5px;
+.footercontainer {
+  width: 100%;
   background: rgb(255, 255, 255);
-  border-bottom: 1px dotted rgb(222, 222, 222);
+  border-top: 1px dotted rgb(222, 222, 222);
+  height: 400px;
+  margin-top: 15px;
+}
+
+.copyrights {
+  width: 100%;
+  background: #f2f2f2;
+  height: fit-content;
+  margin-top: 15px;
+  bottom: 0;
+  padding: 10px;
+  padding-left: 6.5%;
+  bottom: 0px;
+}
+
+.copyrightstext {
+  font-size: 14px;
+  color: #333;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
 }

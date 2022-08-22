@@ -5,17 +5,21 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SellIcon from '@mui/icons-material/Sell';
 import FilterProduct from "../../modules/actions/filterProduct";
-
+import SearchProduct from '../../modules/actions/searchProduct'
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 export default function NavBar() {
+  const [name, setName] = useState('')
   const itemCount = useSelector(state => state.cart.cartProduct)
 
   const dispatch = useDispatch()
   const ChnageCategory = (e) => {
     dispatch(FilterProduct(e.target.value))
-
-
+  }
+  const Search = (e) => {
+    e.preventDefault()
+    dispatch(SearchProduct(name))
   }
   return (
     <Box sx={{
@@ -37,14 +41,14 @@ export default function NavBar() {
         </div>
         <div className="searchbar">
           <img className="bigbasketimg" src={process.env.REACT_APP_BIGBASKET_ICON_1} alt='' />
-          <form style={{
+          <form onSubmit={Search} style={{
             display: 'flex',
             width: 'fit-content',
             marginLeft: '19%',
             position: 'absolute'
           }}>
-            <input className="searchinput"></input>
-            <button className="searchbutton"><SearchOutlinedIcon sx={{
+            <input className="searchinput" value={name} onChange={(e) => { setName(e.target.value) }}></input>
+            <button className="searchbutton" type="submit"><SearchOutlinedIcon sx={{
               fill: 'white'
             }}
             /></button>
